@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.animation.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.Controllers.WelcomePageController"
+            prefHeight="600.0" prefWidth="500.0">
+
+    <!-- Adding StyleSheets over here -->
+    <stylesheets>
+        <String fx:value="/Css/Styles.css"></String>
+    </stylesheets>
+
+    <StackPane prefWidth="500" prefHeight="500">
+
+        <!-- Main content in the Welcome Page -->
+        <VBox alignment="CENTER" spacing="20" styleClass="mainContainer">
+            <Label text="AI Document Assistant" styleClass="titleLabel" fx:id="titleLabel"/>
+
+            <!-- Project Main image -->
+            <ImageView fitWidth="200" fitHeight="150" fx:id="projectImage">
+                <image>
+                    <Image url="/images/FrontImage.png"/>
+                </image>
+            </ImageView>
+
+            <!-- Project Feature List -->
+            <VBox alignment="CENTER" spacing="20">
+                <VBox fx:id="featureBox" alignment="CENTER" spacing="15">
+                <Label text="Features: " style="-fx-font-size: 18px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+                <Label text="* AI-Powered Document Creation" styleClass="featureLabel"/>
+                <Label text="* Supports PDF, DOCX, TXT exports" styleClass="featureLabel"/>
+                <Label text="* Automatic Email Delivery" styleClass="featureLabel"/>
+                <Label text="* No Sign-in required" styleClass="featureLabel"/>
+                </VBox>
+            </VBox>
+
+            <!-- Get Started Button -->
+            <JFXButton text="Get Started" fx:id="startButton" onAction="#handleStart" styleClass="startButton"/>
+        </VBox>
+
+    </StackPane>
+
+</AnchorPane>

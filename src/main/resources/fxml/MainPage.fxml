@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.*?>
+
+<AnchorPane fx:id="mainPane" prefWidth="680" prefHeight="700" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Controllers.MainPageController">
+
+    <stylesheets>
+        <String fx:value="/Css/MainPageStyle.css"></String>
+    </stylesheets>
+
+        <!-- Project Features -->
+        <VBox alignment="CENTER" spacing="8" layoutX="50" layoutY="50" prefWidth="550" prefHeight="600">
+
+            <Label text="AI Document Assistant" styleClass="titleLabel" fx:id="titleLabel"/>
+
+            <VBox alignment="CENTER" spacing="5" style="-fx-padding: 10;" fx:id="featureBox">
+
+            <Label text="Features: " style="-fx-font-size: 18px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+            <Label text="* AI-Powered Document Assistant" styleClass="featureLabel"/>
+            <Label text="* Supports PDF, DOCX, TXT Export" styleClass="featureLabel"/>
+            <Label text="* Automatic Email Delivery" styleClass="featureLabel"/>
+            <Label text="* No Sign-in required" styleClass="featureLabel"/>
+            </VBox>
+
+            <!--  User Input -->
+            <VBox alignment="CENTER" spacing="12" style="-fx-padding: 10;">
+                <JFXTextArea fx:id="askQuery" text="Ask Query..." styleClass="inputBox" prefWidth="100" prefHeight="80"/>
+                <JFXButton text="Generate AI Response" fx:id="responseButton"  styleClass="actionButton" onAction="#generateAIResponse"  buttonType="RAISED">
+                    <VBox.margin>
+                        <Insets top="20" right="20" left="20" bottom="10"></Insets>
+                    </VBox.margin>
+                </JFXButton>
+                <JFXTextArea  styleClass="inputBox" text="AI Response will appear here..." fx:id="aiResponse" wrapText="true" prefHeight="500"/>
+            </VBox>
+
+            <HBox alignment="CENTER" spacing="20">
+                <Label text="Choose File Type: " style="-fx-font-size: 16px; -fx-text-fill: white;"/>
+                <JFXRadioButton fx:id="pdfRadioButton"  styleClass="radioButtons" text="PDF" >
+                    <VBox.margin>
+                        <Insets top="20" right="20" left="20" bottom="10"></Insets>
+                    </VBox.margin>
+                </JFXRadioButton>
+                <JFXRadioButton fx:id="docxRadioButton" styleClass="radioButtons" text="DOCX" >
+                    <VBox.margin>
+                        <Insets top="20" right="20" left="20" bottom="10"></Insets>
+                    </VBox.margin>
+                </JFXRadioButton>
+                <JFXRadioButton fx:id="bothRadioButton" styleClass="radioButtons" text="Both PDF and DOCX" >
+                    <VBox.margin>
+                        <Insets top="20" right="20" left="20" bottom="10"></Insets>
+                    </VBox.margin>
+                </JFXRadioButton>
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="10" style="-fx-text-fill: white; -fx-font-weight: 500;">
+                <JFXButton text="Generate Document" fx:id="generateDocumentButton" styleClass="actionButton" onAction="#generateDocument" buttonType="RAISED">
+                      <HBox.margin>
+                          <Insets top="20" right="20" left="20" bottom="10"></Insets>
+                      </HBox.margin>
+                </JFXButton>
+            </HBox>
+
+        </VBox>
+
+</AnchorPane>

@@ -1,0 +1,74 @@
+
+#mainPane {
+   -fx-background-color: linear-gradient(to top left ,#2A2D43, #4A5899);
+}
+
+#featureBox {
+   -fx-background-color: rgba(255, 255, 255, 0.1);
+   -fx-border-color: white;
+   -fx-border-width: 2;
+   -fx-border-radius: 10;
+   -fx-padding: 20px;
+}
+
+#titleLabel {
+   -fx-font-size: 20px;
+   -fx-font-weight: 700;
+   -fx-text-fill: white;
+   -fx-padding: 8px;
+}
+
+.featureLabel {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+.inputBox{
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
+     -fx-text-fill: white;
+        -fx-font-size: 14px;
+        -fx-border-color: #0078D7;
+        -fx-border-width: 1.4;
+        -fx-border-radius: 8;
+}
+
+.actionButton {
+    -fx-background-color: #1ABC9C;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+}
+
+#askQuery {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-padding: 20px 20px;
+}
+
+.radioButtons {
+   -fx-text-fill: white;
+   -fx-font-size: 12px;
+   -fx-font-weight: bold;
+}
+
+#aiResponse {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-padding: 30px 30px;
+}
+
+#responseButton {
+    -fx-background-color: #0078D7;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 7px;
+}
+
+.actionButton:hover {
+    -fx-background-color: #16A085;
+}
+
+#generateDocumentButton {
+    -fx-background-color: #0078D7;
+}

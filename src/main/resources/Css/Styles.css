@@ -1,0 +1,39 @@
+
+.mainContainer {
+   -fx-background-color: #2A2D43;
+   -fx-padding: 20px;
+   -fx-border-radius: 10px;
+}
+
+.titleLabel {
+   -fx-font-size: 22px;
+   -fx-text-fill: white;
+   -fx-font-weight: 700;
+}
+
+.featureLabel {
+   -fx-font-size: 15px;
+   -fx-text-fill: white;
+}
+
+#featureBox {
+   -fx-background-color: rgba(255, 255, 255, 0.1);
+      -fx-border-color: white;
+      -fx-border-width: 2;
+      -fx-border-radius: 10;
+      -fx-padding: 20px;
+}
+
+.startButton {
+   -fx-background-color: #1ABC9C;
+   -fx-text-fill: white;
+   -fx-font-size: 18px;
+   -fx-font-weight: 700;
+   -fx-padding: 10px 20px;
+   -fx-background-radius: 10px;
+}
+
+.startButton:hover {
+   -fx-background-color: rgba(0,0,0,0);
+   -fx-text-fill: white;
+}
