@@ -4,6 +4,9 @@ import okhttp3.*;
 import org.json.JSONObject;
 import java.io.IOException;
 
+/*
+@Handling AI requests and responses over here with seamless API delivery.
+*/
 public class DeepSeekAI {
     private static final String API_KEY = System.getenv("myKey");
     private static final String API_URL = "https://api.deepseek.com/v1/chat/completions";
